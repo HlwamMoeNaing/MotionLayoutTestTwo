@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:padding="10dp"
+    app:layoutDescription="@xml/activity_on_swipe_scene"
+    tools:context=".activity.ActivityOnSwipe">
+
+    <ImageView
+        android:id="@+id/icon_01"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:src="@drawable/facebook"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_02"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:src="@drawable/whatapp"
+        app:layout_constraintLeft_toRightOf="@id/icon_01"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/icon_03"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:src="@drawable/youtube"
+        app:layout_constraintLeft_toRightOf="@id/icon_02"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/icon_04"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:src="@drawable/like"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_01" />
+
+    <ImageView
+        android:id="@+id/icon_05"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:src="@drawable/messenger"
+        app:layout_constraintLeft_toRightOf="@id/icon_04"
+        app:layout_constraintTop_toBottomOf="@id/icon_01" />
+
+    <ImageView
+        android:id="@+id/icon_06"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:src="@drawable/apple"
+        app:layout_constraintLeft_toRightOf="@id/icon_05"
+        app:layout_constraintTop_toBottomOf="@id/icon_01" />
+
+    <ImageView
+        android:id="@+id/icon_07"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:src="@drawable/google"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon_04" />
+
+    <ImageView
+        android:id="@+id/icon_08"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:src="@drawable/playstore"
+        app:layout_constraintLeft_toRightOf="@id/icon_07"
+        app:layout_constraintTop_toBottomOf="@id/icon_04" />
+
+
+    <ImageView
+        android:id="@+id/icon_09"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:padding="10dp"
+        android:scaleType="center"
+        android:src="@drawable/twitter"
+        app:layout_constraintLeft_toRightOf="@id/icon_08"
+        app:layout_constraintTop_toBottomOf="@id/icon_04" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/heart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+
+</androidx.constraintlayout.motion.widget.MotionLayout>

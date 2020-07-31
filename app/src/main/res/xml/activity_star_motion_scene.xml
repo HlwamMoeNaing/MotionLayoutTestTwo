@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+        motion:constraintSetEnd="@+id/end"
+        motion:constraintSetStart="@id/start"
+        motion:duration="1000">
+       <KeyFrameSet>
+       </KeyFrameSet>
+        <OnClick motion:targetId="@+id/img_middle_star" />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/img_middle_star"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="70dp"
+            motion:layout_constraintHorizontal_bias="0.498"
+            motion:layout_constraintStart_toStartOf="parent" />
+        <Constraint
+            android:id="@+id/credit"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginStart="303dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp" />
+        <Constraint
+            android:id="@+id/img_left_star"
+            motion:layout_constraintEnd_toStartOf="@+id/img_middle_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="70dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginStart="130dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:visibility="invisible"
+            android:layout_marginRight="0dp" />
+        <Constraint
+            android:id="@+id/imageView5"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/img_middle_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="70dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginStart="8dp" />
+        <Constraint
+            android:id="@+id/img_right_star"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/img_middle_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="70dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginStart="0dp"
+            android:visibility="invisible"
+            android:layout_marginLeft="0dp" />
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+        <Constraint
+            android:id="@+id/img_middle_star"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            motion:layout_constraintHorizontal_bias="0.498"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/credit" />
+        <Constraint
+            android:id="@+id/img_left_star"
+            motion:layout_constraintEnd_toStartOf="@+id/img_middle_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="130dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@id/credit"
+            android:visibility="visible" />
+        <Constraint
+            android:id="@+id/img_right_star"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toEndOf="@+id/img_middle_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="70dp"
+            android:layout_marginEnd="138dp"
+            android:layout_marginStart="8dp"
+            motion:layout_constraintTop_toBottomOf="@id/credit"
+            android:visibility="visible" />
+        <Constraint
+            android:id="@+id/credit"
+            motion:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="49dp"
+            android:layout_marginStart="303dp"
+            motion:layout_constraintTop_toTopOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="30dp"
+            android:alpha="0" />
+    </ConstraintSet>
+</MotionScene>
